@@ -1,0 +1,78 @@
+.myNavbar{
+    border-bottom: 1px solid $color-gray-3;
+    .navbar-brand{
+        flex-grow: 1;
+        img{
+            width: 110px;
+        }
+    }
+    .categories{
+        flex-grow: 1;
+        @include text($color-black-light,$fs-1,$fw-normal);
+        align-self: center;
+    }
+    .input_search{
+        flex-grow: 5;
+        align-self: center;
+        .form-control{
+            background-color: $color-gray-1;
+            border: none;
+            transition: none;
+            &:focus{
+                box-shadow: none;
+                background-color: $color-white-0;
+                border-top: solid $color-gray-3;
+                border-bottom: solid $color-gray-3;
+                border-left: solid $color-gray-3;
+            }
+            &:focus + .input-group-text{
+                color: $color-red-0;
+                background-color: $color-white-0;
+                border-top: solid $color-gray-3;
+                border-bottom: solid $color-gray-3;
+                border-right: solid $color-gray-3;
+                &:hover{
+                    color: $color-white-0;
+                    background-color: $color-red-0;
+                }
+            }
+        }
+        .input-group-text{
+            background-color: $color-gray-1;
+            color: $color-red-0;
+            border: none;
+            &:hover{
+                color: $color-white-0;
+                background-color: $color-red-0;
+            }
+        }
+    }
+    .navbar-nav{
+        width: 100%;
+        justify-content: space-between;
+        .nav-item{
+            .nav-link{
+                @include text($color-black-light,$fs-1,$fw-normal);
+                padding: $pd-1 $pd-2;
+            }
+            &:hover{
+                background-color: $color-gray-1;
+            }
+        } 
+        .nav-item:nth-child(3){
+            border-radius: 50%;
+        }  
+    }
+    @include respond-to('extra-large'){
+        .navbar-nav{
+            .business,.instructor{
+                display: none;
+            }
+        }
+    }
+    @include respond-to('medium'){
+        .categories,.input_search{
+            display: none;
+        }
+    }
+}

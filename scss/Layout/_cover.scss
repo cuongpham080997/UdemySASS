@@ -1,0 +1,44 @@
+.myCover{
+    background-image: url('../../img/banner1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    .cover__content{
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        width: 40%;
+        h1{
+            @include text($color-white-0,$fs-4,$fw-bold);
+        }
+        p{
+            @include text($color-white-0,$fs-2 - 2,$fw-normal);
+        }
+        .input{
+            .form-control{
+                padding: $pd-1;
+                border-radius: 0;
+                &::placeholder{
+                    @include text($color-gray-2,$fs-2,$fw-normal)
+                }
+                &:focus{
+                    box-shadow: none;
+                }
+
+                
+            }
+            span.input-group-text{
+                border-radius: 0;
+                border: none;
+                background-color: $color-white-0;
+                color: $color-red-0;
+                &:hover{
+                    background-color: $color-red-0;
+                    color: $color-white-0;
+                }
+            }
+        }
+    }
+}
