@@ -136,6 +136,62 @@ body {
   color: #fff;
 }
 
+.myIntro {
+  background: linear-gradient(to right, #521822, #ec5252);
+}
+.myIntro .intro_content {
+  width: 80%;
+  margin: auto;
+  padding: 15px;
+}
+.myIntro .intro_content .intro__item .icon {
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  margin-right: 25px;
+}
+.myIntro .intro_content .intro__item .icon__content p:first-child {
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.myIntro .intro_content .intro__item .icon__content p:last-child {
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.myCourse {
+  margin-top: 25px;
+}
+.myCourse .course__content {
+  width: 80%;
+  margin: auto;
+}
+.myCourse .course__content .course__intro {
+  padding-top: 4rem;
+}
+.myCourse .course__content .course__intro h2 {
+  color: #29303b;
+  font-size: 40px -4;
+  font-weight: normal;
+}
+.myCourse .course__content .myTab .nav-tabs {
+  justify-content: space-between;
+  border: none;
+}
+.myCourse .course__content .myTab .nav-tabs .nav-item .nav-link {
+  border: none;
+}
+.myCourse .course__content .myTab .nav-tabs .nav-item:hover .nav-link {
+  border: none;
+}
+.myCourse .course__content .myTab .nav-tabs .nav-item .nav-link.active {
+  border: none;
+  border-bottom: 5px solid #007791;
+}
+
 .btn--white {
   color: #686f7a;
   background-color: #fff;
