@@ -191,6 +191,79 @@ body {
   border: none;
   border-bottom: 5px solid #007791;
 }
+.myCourse .course__content .myTab .tab-content {
+  position: relative;
+  margin-top: 25px;
+}
+.myCourse .course__content .myTab .tab-content .card-title {
+  color: #29303b;
+  font-size: 40px -4;
+  font-weight: bold;
+}
+.myCourse .course__content .myTab .tab-content .card-text {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+}
+.myCourse .course__content .myTab .tab-content .rating .rating__star {
+  color: #f4c150;
+  font-size: 13px;
+  font-weight: normal;
+  margin-right: 2px;
+}
+.myCourse .course__content .myTab .tab-content .rating span:ntn-child(2) {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 2px;
+}
+.myCourse .course__content .myTab .tab-content .rating span:last-child {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: bold;
+}
+.myCourse .course__content .myTab .tab-content .price {
+  text-align: right;
+}
+.myCourse .course__content .myTab .tab-content .price .old-price {
+  color: #686f7a;
+  font-size: 13px;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+.myCourse .course__content .myTab .tab-content .price .new-price {
+  color: #29303b;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 33%;
+  left: -3.5%;
+  padding: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50% !important;
+  background-color: #fff !important;
+  box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.1);
+  z-index: 3;
+}
+.owl-prev span, .owl-next span {
+  line-height: 0.6;
+  margin-left: 2px;
+  color: #007791;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.owl-next {
+  left: unset;
+  right: -3.5%;
+}
+.owl-next span {
+  margin-right: 2px;
+}
 
 .btn--white {
   color: #686f7a;

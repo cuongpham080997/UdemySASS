@@ -1,34 +1,71 @@
-.myCourse{
-    margin-top: $mg-2;
-    .course__content{
-        width: 80%;
-        margin: auto;
-        .course__intro{
-            padding-top: 4rem;
-            h2{
-                @include text($color-black-0,$fs-4 -4,$fw-normal)
-            }
-        }
-        .myTab{
-            .nav-tabs{
-                justify-content: space-between;
-                border: none;
-                .nav-item{
-                    .nav-link{
-                        border: none;
-                    }
-                    &:hover{
-                        .nav-link{
-                            border: none;
-                        }
-                    }
-                    .nav-link.active{
-                        border:none;
-                        border-bottom: 5px solid $color-blue;
-                    }
-
-                }
-            }
-        }
+.myCourse {
+  margin-top: $mg-2;
+  .course__content {
+    width: 80%;
+    margin: auto;
+    .course__intro {
+      padding-top: 4rem;
+      h2 {
+        @include text($color-black-0, $fs-4 -4, $fw-normal);
+      }
     }
+    .myTab {
+      .nav-tabs {
+        justify-content: space-between;
+        border: none;
+        .nav-item {
+          .nav-link {
+            border: none;
+          }
+          &:hover {
+            .nav-link {
+              border: none;
+            }
+          }
+          .nav-link.active {
+            border: none;
+            border-bottom: 5px solid $color-blue;
+          }
+        }
+      }
+
+      .tab-content {
+        position: relative;
+        margin-top: $mg-2;
+
+        .card-title {
+          @include text($color-black-0, $fs-4 -4, $fw-bold);
+        }
+
+        .card-text {
+          @include text($color-gray-4, $fs-1, $fw-normal);
+        }
+
+        .rating {
+          .rating__star {
+            @include text($color-yellow, $fs-1, $fw-normal);
+            margin-right: $mg-0;
+          }
+          span:ntn-child(2) {
+            @include text($color-gray-4, $fs-1, $fw-bold);
+            margin-right: $mg-0;
+          }
+          span:last-child {
+            @include text($color-gray-4, $fs-1, $fw-bold);
+          }
+        }
+
+        .price {
+          text-align: right;
+          .old-price {
+            @include text($color-gray-4, $fs-1, $fw-normal);
+            text-decoration: line-through;
+          }
+          .new-price {
+            @include text($color-black-0, $fs-0, $fw-bold);
+          }
+        }
+      }
+    }
+  }
 }
